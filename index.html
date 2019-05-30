@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	
+	function sum(a,b){
+		return a+b;
+	}
+	function isPositive(num){
+		return  num >= 0;
+	}
+
+	console.log(isPositive(-3));
+
+/*	let sum2 = (a,b) => a+b;
+	console.log(sum2(2,3));
+
+	let isPositive2= num =>0;*/
+//	let isPositive2=(num)=> num >= 0;
+/*let points = [6, 10, 102, 5, 22, 2];
+const sortAsc = (a, b) => a - b;
+points.sort(sortAsc);
+
+console.log(points);
+var arr = [2, 5, 8, 1, 4]
+console.log(arr.sort());*/
+//old way
+let num=[1,11,3,3,2,5,23,2,65]
+ function jidesh1(){
+ 	num.sort(function(a,b){
+ 		return a-b
+ 	});
+ }
+jidesh1();
+console.log(num);
+
+
+ 
+//ES6 way
+let arr = [4, 10, 100, 25, 2, 20];
+let jidesh = (a, b) => a - b;
+arr.sort(jidesh);
+console.log(arr);
+</script>
+</html>

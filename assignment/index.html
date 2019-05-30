@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>subscribe and unsubscribe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a href="#unsubscribe" class="btn" type="button">Subscribe</a>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.btn').on('click', function() {
+  if($(this).text() == 'Subscribe') {
+    $(this).text('UnSubscribe');
+    $(this).attr('href', '#subscribe');
+  } else {
+    $(this).text('Subscribe');
+    $(this).attr('href', '#unsubscribe');
+  }
+});
+</script>
+
+</html>
